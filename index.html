@@ -2,11 +2,145 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Главная страница</title>
   </head>
-  <body>
+<body>
+  <header class="main-header">
+    <nav class="main-nav">
+      <a class="logo">
+        <img src="" alt="Логотип сайта о Седоне">
+      </a>
+      <ul class="site-navigation">
+        <li class="site-navigation-item">
+          <a class="navigation-link" href="index.html">Главная</a>
+        </li>
+        <li class="site-navigation-item">
+          <a class="navigation-link" href="#">О Седоне</a>
+        </li>
+        <li class="site-navigation-item">
+          <a class="navigation-link" href="catalog.html">Гостиницы</a>
+        </li>
+      </ul>
+      <ul class="site-navigation-user">
+        <li class="site-navigation-user-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="site-navigation-user-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Избранное</span>
+          </a>
+        </li>
+        <li class="site-navigation-user-item">
+          <a class="navigation-link" href="#">Хочу сюда!</a>
+        </li>
+      </ul>
+   </nav>
+</header>
+  <main class="main-index">
+    <h1 class="visually-hidden">Седона</h1>
+    <section class="about">
+      <h2 class="visually-hidden">Немного о Седоне</h2>
+      <b>Седона — небольшой городок в Аризоне,
+        заслуживающий большего!</b>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+    </section>
+    <section class="features">
+      <h2 class="visually-hidden">Причины, по которым Седона круче</h2>
+      <ol class="features-list">
+        <li class="features-list-item">
+          <h3 class="features-title">Настоящий городок</h3>
+          <img src="photo-1" alt="Фото городка Седоны">
+          <span>— №1 —</span>
+          <p>Седона — не аттракцион для туристов, там течёт
+            своя жизнь</p>
+        <ul class="feature-list-icon">
+        <li class="features-list-item-icon">
+          <h4 class="features-title-icon">Жильё</h4>
+          <p>Рекомендуем пожить в настоящем мотеле,
+            всё как в кино!
+          </p>
+        </li>
+        <li class="features-list-item-icon">
+          <h4 class="features-title-icon">Еда</h4>
+          <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+          </p>
+        </li>
+        <li class="features-list-item-icon">
+          <h4 class="features-title-icon">Сувениры</h4>
+          <p>Не только китайского, но и настоящего местного производства!
+          </p>
+        </li>
+        </ul>
+        <li class="features-list-item">
+          <h3 class="features-title">Там есть мост дьявола</h3>
+          <img src="photo-2" alt="Фото моста дьявола">
+          <span>— №2 —</span>
+          <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+        </li>
+        <li class="features-list-item">
+          <h3 class="features-title">Небольшая площадь</h3>
+          <span>— №3 —</span>
+          <p>Все достопримечательности находятся очень близко</p>
+        </li>
+        <li class="features-list-item">
+          <h3 class="features-title">Красивая дорога</h3>
+          <span>— №4 —</span>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </li>
+        <li class="features-list-item">
+          <h3 class="features-title">Мало туристов</h3>
+          <span>— №5 —</span>
+          <p>Большинство едет в Гранд Каньон и толпится там</p>
+        </li>
+      </ol>
+    </section>
+    <section class="search-hotel">
+      <h2 class="visually-hidden">Поиск гостиницы</h2>
+      <b>Заинтересовались?</b>
+       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+       </p>
+      <a class="button-search-hotel" href="catalog.html">Поиск гостиницы в Седоне</a>
+    </section>
+    <section class="newsletter">
+      <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+      <p>Только полезная информация и никакого спама,
+        честное бойскаутское!</p>
+        <form class="newsletter-form" action="http://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="newsletter-email">Email</label>
+          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+          <button class="button newsletter-button" type="submit">
+            Подписаться
+          </button>
+        </form>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <ul class="footer-social-list">
+      <li class="footer-social-item">
+        <a class="button-social-item" href="https://twitter.com/htmlacademy_ru
+        ">
+          <span class="visually-hidden">Твиттер</span>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a class="button-social-item" href="https://www.facebook.com/htmlacademy
+        ">
+          <span class="visually-hidden">Фейсбук</span>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a class="button-social-item" href="https://www.youtube.com/c/HTMLAcademyRUS">
+          <span class="visually-hidden">Ютуб</span>
+        </a>
+      </li>
+    </ul>
+    <a href="tel:+78128121212">+7 812 812-12-12</a>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
-  </body>
+      <a class="logo_htmlacademy" href="https://htmlacademy.ru/">
+        <img src="" alt="Логотип сайта Htmlacademy">
+      </a>
+  </footer>
+</body>
 </html>
