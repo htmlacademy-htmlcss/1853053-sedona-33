@@ -50,9 +50,9 @@
         </li>
        </ul>
       </header>
-       <section class="catalog-hotel">
+       <section class="filter-hotel">
          <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+         < class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
            <fieldset class="catalog-filter-group">
              <legend class="catalog-filter-title">Инфраструктура:</legend>
              <ul class="catalog-filter-list">
@@ -99,9 +99,12 @@
                  </li>
             </ul>
             </fieldset>
+
           <button class="button" type="submit">Применить</button>
           <button class="button" type="submit">Сбросить</button>
         </form>
+      </section>
+      <section class="assortment-hotel">
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярное</option>
           <option value="cheap">Сначала дешёвое</option>
@@ -113,7 +116,10 @@
         <a class="button" href="#">
           <span class="visually-hidden">Показать карточки</span>
         </a>
-        <ul class="product-lst">
+      </section>
+      <section class="card-hotel">
+        <h2 class="visually-hidden">Карточки с гостиницами и их ценами</h2>
+        <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="product.html">
               <img class="product-card-image" src="" alt="Фото гостиницы Amara Resort & Spa">
@@ -155,8 +161,9 @@
           <a class="product-card-button-favorites" href="#">В Избранное</a>
         </li>
         </ul>
-       </section>
-       <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+       <button class="button pagination-show-more" type="button">Загрузить ещё
+       </button>
+      </section>
        <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
