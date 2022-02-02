@@ -42,5 +42,12 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+.main-index {
+  color: #000000;
+  background-color: #F2F2F2;
+  background-image: url("../images/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
 
 
