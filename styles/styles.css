@@ -1,16 +1,19 @@
-@font-face{
+@font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   src: ("../fonts/ptsans-400.woff2") format("woff2");
   display: swap;
   }
-@font-face{
+@font-face {
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
     src: ("../fonts/ptsans-700.woff2") format("woff2");
     display: swap;
+    }
+body {
+      font-family: "PT Sans", sans-serif;
     }
 
 
