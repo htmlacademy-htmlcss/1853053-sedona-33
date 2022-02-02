@@ -69,5 +69,16 @@ body {
   color: #FFFFFF;
   background-color: #83B3D3;
 }
+/* заголовок текста преимуществ с фото */
+.features-title-image {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+}
+
 
 
