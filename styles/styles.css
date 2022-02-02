@@ -60,7 +60,14 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-
+}
+/* текст списка преимуществ c фото */
+.features-list-item-image {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #83B3D3;
 }
 
 
