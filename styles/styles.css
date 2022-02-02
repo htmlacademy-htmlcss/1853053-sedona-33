@@ -24,6 +24,7 @@ body {
   color: #000000;
   background-color: #F2F2F2;
     }
+    /* для ссылок в шапке */
 .navigation-link {
   font-size: 20px;
   line-height: 26px;
@@ -31,7 +32,8 @@ body {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
-}
+  }
+   /* для кнопки "хочу сюда" */
 .navigation-user {
   font-size: 16px;
   line-height: 20px;
@@ -42,12 +44,23 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+/* фоновый рисунок */
 .main-index {
   color: #000000;
   background-color: #F2F2F2;
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+
+}
+/* текст " Седона — небольшой городок в Аризоне, заслуживающий большего!"*/
+.about b {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
 }
 
 
