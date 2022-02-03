@@ -250,4 +250,11 @@ body {
     color: #000000;
     background-color: #FFFFFF;
   }
-  /*  */
+  /* расширенный список */
+  .select-control {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #333333;
+    background-color: #FFFFFF;
+  }
