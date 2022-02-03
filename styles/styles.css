@@ -213,3 +213,41 @@ body {
   line-height: 21px;
   text-decoration: none;
 }
+/*заголовки сортировки */
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+/* кнопка применить */
+.button-apply {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  font-family: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* кнопка сбросить */
+.button-reset {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 23px;
+  font-family: 400;
+  text-align: center;
+  color: #FFFFFF;
+  background:transparent;
+  text-decoration: none;
+  }
+  /* результат поиска */
+  .result {
+    font-size: 30px;
+    line-height: 39px;
+    font-weight: 700;
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+  /*  */
