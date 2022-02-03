@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <!-- Шапка каталога-->
     <header class="main-header">
       <nav class="main-nav">
         <a class="logo" href="index.html">
@@ -40,6 +41,8 @@
       </nav>
     </header>
     <main class="main-inner">
+      <!--Блок c основной сортировкой-->
+      <div class="basic-sorting">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -129,6 +132,8 @@
           <button class="button" type="reset">Сбросить</button>
         </form>
       </section>
+      </div>
+      <!-- Блок еще с сортировкой по популярности и формой вывода на экран-->
       <section class="assortment-hotel">
         <h2 class="visually-hidden">Сортировка гостиниц</h2>
         <p>Найдено гостиниц: 38</p>
@@ -147,6 +152,7 @@
           <span class="visually-hidden">Показать списком</span>
         </a>
       </section>
+      <!-- Блок с карточкаки гостиниц-->
       <section class="card-hotel">
         <h2 class="visually-hidden">Карточки с гостиницами и их ценами</h2>
         <ul class="product-list">
@@ -207,10 +213,12 @@
             <p>Рейтинг: 9,2</p>
           </li>
         </ul>
+        <!-- Кнопка загрузить еще-->
         <button class="button pagination-show-more" type="button">
           Загрузить ещё
         </button>
       </section>
+      <!-- Пагинация-->
       <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
@@ -231,6 +239,7 @@
           <a class="pagination-link" href="#">10</a>
         </li>
       </ul>
+      <!--Раскрывающийся список гостиниц-->
       <section class="number-per-page">
         <h2 class="visually-hidden">Количество гостиниц на странице</h2>
         <p>Гостиниц на странице:</p>
