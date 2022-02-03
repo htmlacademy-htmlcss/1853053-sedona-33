@@ -132,3 +132,22 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+/* Блок с предложением подписаться */
+.newsletter {
+  color: #FFFFFF;
+  background-color: #000000;
+  background-image: url(../images/background-subscription.jpg);
+  background-repeat: no-repeat;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+/* заголовок блока с предложением подписаться */
+.newsletter-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
