@@ -151,3 +151,15 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+/* кнопка подписаться */
+.newsletter-button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
