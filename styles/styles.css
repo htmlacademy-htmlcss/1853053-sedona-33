@@ -110,3 +110,25 @@ body {
   color: #333333;
   background-color: #FFFFFF;
 }
+/* Вопрос "Заинтересовалис?" */
+.search-hotel-question {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+}
+/* кнопка поиска гостиницы */
+.button-search-hotel {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #756257;
+  text-decoration: none;
+  text-transform: uppercase;
+}
