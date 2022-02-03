@@ -191,6 +191,25 @@ body {
   background-image: url(../images/catalog-background.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
   text-align: center;
+  }
+  /* Заголовок сортировки в Каталоге */
+  .inner-header-title {
+   font-size: 60px;
+   line-height: 77px;
+   font-weight: 700;
+  }
+/* хлебные крошки */
+.breadcrumbs {
+ color: #FFFFFF;
+}
+/* ссылки у хлебных крошек */
+.breadcrumbs-link {
+  color: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
 }
