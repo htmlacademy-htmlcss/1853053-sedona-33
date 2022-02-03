@@ -142,6 +142,7 @@ body {
   color: #FFFFFF;
   background-color: #000000;
   background-image: url(../images/background-subscription.jpg);
+  background-size: 100% auto;
   background-repeat: no-repeat;
   font-size: 22px;
   line-height: 26px;
@@ -182,4 +183,14 @@ body {
   text-decoration: none;
   color: #000000;
   background-color: #FFFFFF;
+}
+/* основная сортировка в Каталоге */
+.basic-sorting {
+  color: #FFFFFF;
+  background-color: #000000;
+  background-image: url(../images/catalog-background.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  text-align: center;
 }
