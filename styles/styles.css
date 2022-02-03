@@ -67,5 +67,37 @@ body {
   line-height : 21px;
   text-align: center;
   color:#333333 ;
-  background-color: #FFFFFF;
+  background-color: rgba(131, 179, 211, 0.12);
+
 }
+/* текст заголовков преимуществ */
+.features-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+}
+/* пункт с иконкой еды */
+.food {
+ background-color: #FFFFFF;
+}
+/* пункт с красивой дорогой */
+.beautiful-road {
+  background-color: (131, 179, 211, 0.2);
+}
+/* список с рисунками */
+.image {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+}
+/* заголовки списка с рисунками */
+.image .features-title-image {
+  font-size: 24px;
+  line-height: 28px;
+}
+
