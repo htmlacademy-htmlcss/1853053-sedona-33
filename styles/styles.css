@@ -19,11 +19,16 @@ body {
       color: #000000;
       background-color: #FFFFFF;
     }
-    /* Pages */
+    /* главная страница */
 .main-header {
   color: #000000;
   background-color: #F2F2F2;
     }
+    /* каталог */
+.main-inner {
+  color: #000000;
+  background-color: #FFFFFF;
+}
     /* для ссылок в шапке */
 .navigation-link {
   font-size: 20px;
@@ -162,6 +167,10 @@ body {
   background-color: #83B3D3;
   text-decoration: none;
   text-transform: uppercase;
+}
+.main-footer {
+  color:#000000;
+  background-color: #FFFFFF;
 }
 /* номер телефона*/
 .telephone {
