@@ -99,5 +99,14 @@ body {
 .image .features-title-image {
   font-size: 24px;
   line-height: 28px;
+  text-transform: uppercase;
 }
-
+/* блок с поиском гостиницы в Седоне */
+.search-hotel {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+  background-color: #FFFFFF;
+}
