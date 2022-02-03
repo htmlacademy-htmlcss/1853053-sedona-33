@@ -163,3 +163,14 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+/* номер телефона*/
+.telephone {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  background-color: #FFFFFF;
+}
