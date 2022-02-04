@@ -115,7 +115,7 @@ body {
   color: #333333;
   background-color: #FFFFFF;
 }
-/* Вопрос "Заинтересовалис?" */
+/* Вопрос "Заинтересовались?" */
 .search-hotel-question {
   font-size: 30px;
   line-height: 36px;
@@ -252,6 +252,14 @@ body {
   }
   /* расширенный список */
   .select-control {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #333333;
+    background-color: #FFFFFF;
+  }
+  /* стилизация для всего блока с карточками товаров */
+  .product-card {
     font-size: 18px;
     line-height: 23px;
     font-weight: 400;
