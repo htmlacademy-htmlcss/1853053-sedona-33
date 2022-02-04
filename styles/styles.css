@@ -339,3 +339,8 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+/* стилизация кнопки "1" в пагинации */
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
