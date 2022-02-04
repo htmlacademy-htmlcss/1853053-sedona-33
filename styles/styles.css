@@ -344,3 +344,11 @@ body {
   color: #000000;
   background-color: #F2F2F2;
 }
+/* раскрывающийся список гостиниц в результате поиска */
+.number-per-page {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #FFFFFF;
+}
