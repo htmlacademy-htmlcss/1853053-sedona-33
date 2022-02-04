@@ -303,3 +303,15 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+/* кнопка избранное */
+.product-card-button-favorites {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
