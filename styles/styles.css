@@ -315,3 +315,15 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+/* кнопка загрузить еще */
+.button-show-more {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
