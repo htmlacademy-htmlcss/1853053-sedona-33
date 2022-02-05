@@ -82,15 +82,15 @@ body {
   color: #000000;
 }
 /* пункт с иконкой еды */
-.food {
+.features-list-item:nth-child(2) {
   background-color: #ffffff;
 }
 /* пункт с красивой дорогой */
-.beautiful-road {
-  background-color: (131, 179, 211, 0.2);
+.features-list-item:nth-child(4){
+  background-color: rgba(131, 179, 211, 0.2);
 }
-/* список с рисунками */
-.image {
+/* изображение городка */
+.item-with-photos-of-the-town {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
@@ -98,8 +98,17 @@ body {
   color: #ffffff;
   background-color: #83b3d3;
 }
-/* заголовки списка с рисунками */
-.image .features-title-image {
+/* изображение моста дьявола */
+.item-with-photos-of-the-devil-bridge {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  background-color: #83b3d3;
+}
+/* заголовки списка с изображениями городка и моста дьявола */
+ .features-title-image {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
