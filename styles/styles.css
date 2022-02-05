@@ -1,0 +1,361 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: ("../fonts/ptsans-400.woff2") format("woff2");
+  display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: ("../fonts/ptsans-700.woff2") format("woff2");
+  display: swap;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+/* главная страница */
+.main-header {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+/* каталог */
+.main-inner {
+  color: #000000;
+  background-color: #ffffff;
+}
+/* для ссылок в шапке */
+.navigation-link {
+  font-size: 20px;
+  line-height: 26px;
+  color: inherit;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+/* для кнопки "хочу сюда" */
+.navigation-user {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756257;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* фоновый рисунок */
+.main-index {
+  color: #000000;
+  background-color: #f2f2f2;
+  background-image: url("../images/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+/* текст " Седона — небольшой городок в Аризоне, заслуживающий большего!"*/
+.about b {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* текст для всего блока преемуществ */
+.features-list-item {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+/* текст заголовков преимуществ */
+.features-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+}
+/* пункт с иконкой еды */
+.features-list-item:nth-child(2) {
+  background-color: #ffffff;
+}
+/* пункт с красивой дорогой */
+.features-list-item:nth-child(4){
+  background-color: rgba(131, 179, 211, 0.2);
+}
+/* изображение городка */
+.item-with-photos-of-the-town {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  background-color: #83b3d3;
+}
+/* изображение моста дьявола */
+.item-with-photos-of-the-devil-bridge {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  background-color: #83b3d3;
+}
+/* заголовки списка с изображениями городка и моста дьявола */
+ .features-title-image {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+/* блок с поиском гостиницы в Седоне */
+.search-hotel {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+  background-color: #ffffff;
+}
+/* Вопрос "Заинтересовались?" */
+.search-hotel-question {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+/* кнопка поиска гостиницы */
+.button-search-hotel {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756257;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* Блок с предложением подписаться */
+.newsletter {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url(../images/background-subscription.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+/* заголовок блока с предложением подписаться */
+.newsletter-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* кнопка подписаться */
+.newsletter-button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #83b3d3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.main-footer {
+  color: #000000;
+  background-color: #ffffff;
+}
+/* номер телефона*/
+.telephone {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
+}
+/* основная сортировка в Каталоге */
+.basic-sorting {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url(../images/catalog-background.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  text-align: center;
+}
+/* Заголовок сортировки в Каталоге */
+.inner-header-title {
+  font-size: 60px;
+  line-height: 77px;
+  font-weight: 700;
+}
+/* хлебные крошки */
+.breadcrumbs {
+  color: #ffffff;
+}
+/* ссылки у хлебных крошек */
+.breadcrumbs-link {
+  color: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+}
+/*заголовки сортировки */
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+/* кнопка применить */
+.button-apply {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  font-family: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #83b3d3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* кнопка сбросить */
+.button-reset {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 23px;
+  font-family: 400;
+  text-align: center;
+  color: #ffffff;
+  background: transparent;
+  text-decoration: none;
+}
+/* результат поиска */
+.result {
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+}
+/* расширенный список */
+.select-control {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #ffffff;
+}
+/* стилизация для всего блока с карточками товаров */
+.product-card {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #ffffff;
+}
+/* стилизация для ссылок с изображениями гостиниц и названиями */
+.product-card-link {
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: inherit;
+  text-decoration: none;
+}
+/* стилизация ценника */
+.product-card-price {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #ffffff;
+}
+/* стилизация рейтинга */
+.raiting {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+/* кнопка подробнее */
+.product-card-button-more {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756257;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* кнопка избранное */
+.product-card-button-favorites {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #83b3d3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* кнопка загрузить еще */
+.button-show-more {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #83b3d3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* стилизации пагинации */
+.pagination-link {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #83b3d3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* стилизация кнопки "1" в пагинации */
+.pagination-current {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+/* раскрывающийся список гостиниц в результате поиска */
+.number-per-page {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #ffffff;
+}
