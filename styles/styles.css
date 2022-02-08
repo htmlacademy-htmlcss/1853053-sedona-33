@@ -12,12 +12,20 @@
   src: ("../fonts/ptsans-700.woff2") format("woff2");
   display: swap;
 }
+html {
+  height: 100%;
+}
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
+
 }
 /* главная страница */
 .main-header {
@@ -29,6 +37,33 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
+/* создаем флекс-контейнер в шапке с навигацией */
+.main-nav {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+
+}
+.logo {
+  margin-left: 70px;
+  margin-right: 30px;
+  padding:0;
+}
+/* список ссылок  в шапке слева */
+.site-navigation {
+margin: 0;
+padding: 0;
+width: 455px;
+
+}
+/* список ссылок  в шапке справа */
+.site-navigation-user {
+  margin: 0;
+  padding: 0;
+  max-width: 304px;
+  margin-left: auto;
+
+  }
 /* для ссылок в шапке */
 .navigation-link {
   font-size: 20px;
@@ -49,6 +84,10 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+/* делаем основную часть "жадной" */
+.main-container {
+  flex-grow: 1;
+}
 /* фоновый рисунок */
 .main-index {
   color: #000000;
@@ -56,6 +95,18 @@ body {
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+/* контейнер основной части */
+.page-container {
+width: 1200px;
+margin: 0 auto;
+
+}
+/* блок о седоне */
+.about {
+  display: block;
+  margin: 0 auto;
+
 }
 /* текст " Седона — небольшой городок в Аризоне, заслуживающий большего!"*/
 .about b {
@@ -65,14 +116,45 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+/* список преемуществ */
+.features-list {
+  padding: 0;
+  margin: 0;
+
+}
 /* текст для всего блока преемуществ */
 .features-list-item {
+  width: 400px;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
   color: #333333;
   background-color: rgba(131, 179, 211, 0.12);
 }
+/* блок с фото города */
+.item-with-photos-of-the-town {
+display: flex;
+width: 1200px;
+}
+/* список преемуществ с иконками */
+.feature-list-icon {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+/* блок с фото моста дьявола */
+.item-with-photos-of-the-devil-bridge {
+  display: flex;
+  width: 1200 px;
+}
+/* блок с последними 3 преимуществами */
+  .last-three-benefits {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+
 /* текст заголовков преимуществ */
 .features-title {
   font-size: 24px;
@@ -113,8 +195,12 @@ body {
   line-height: 28px;
   text-transform: uppercase;
 }
+
 /* блок с поиском гостиницы в Седоне */
 .search-hotel {
+  width: 1200;
+  margin: 0;
+  padding: 0;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
@@ -146,6 +232,9 @@ body {
 }
 /* Блок с предложением подписаться */
 .newsletter {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
   color: #ffffff;
   background-color: #000000;
   background-image: url(../images/background-subscription.jpg);
@@ -177,11 +266,22 @@ body {
   text-transform: uppercase;
 }
 .main-footer {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
   color: #000000;
   background-color: #ffffff;
 }
+/* список с социальными сетями */
+.footer-social-list {
+  width: 107px;
+  margin-right: 72px;
+  margin-left: 61px;
+}
 /* номер телефона*/
 .telephone {
+  width: 720px;
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
@@ -190,6 +290,11 @@ body {
   text-decoration: none;
   color: #000000;
   background-color: #ffffff;
+}
+.logo_htmlacademy {
+  width: 115px;
+  margin-right: 72px;
+  margin-left: auto;
 }
 /* основная сортировка в Каталоге */
 .basic-sorting {
