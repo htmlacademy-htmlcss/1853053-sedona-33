@@ -141,12 +141,8 @@ body {
   display: flex;
   width: 1200 px;
 }
-/* блок с последними 3 преимуществами */
-.last-three-benefits {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
+
+
 
 /* текст заголовков преимуществ */
 .features-title {
