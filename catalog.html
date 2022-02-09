@@ -44,7 +44,8 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-inner main-container">
+      <div class="page-container">
       <!--Блок c основной сортировкой-->
       <div class="basic-sorting">
         <header class="inner-header">
@@ -158,7 +159,7 @@
       </section>
       <!-- Блок с карточкаки гостиниц-->
       <section class="card-hotel">
-        <h2 class="visually-hidden">Карточки с гостиницами и их ценами</h2>
+        <h2 class="visually-hidden" hidden>Карточки с гостиницами и их ценами</h2>
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="product.html">
@@ -229,6 +230,7 @@
         <button class="button-show-more" type="button">Загрузить ещё</button>
       </section>
       <!-- Пагинация-->
+      <div class="pagination-with-the-number-of-hotels">
       <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
@@ -259,8 +261,9 @@
           <option value="5">5</option>
         </select>
       </section>
-      <section class="newsletter">
-        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+      </div>
+      <section class="newsletter-catalog">
+        <h2 class="newsletter-title-catalog">Подпишитесь на рассылку</h2>
         <p>
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
@@ -281,6 +284,7 @@
           </button>
         </form>
       </section>
+    </div>
     </main>
     <footer class="main-footer">
       <ul class="footer-social-list">
@@ -318,8 +322,4 @@
     </footer>
   </body>
 </html>
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
+
