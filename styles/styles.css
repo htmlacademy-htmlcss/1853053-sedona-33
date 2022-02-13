@@ -269,6 +269,7 @@ span {
   text-align: center;
   color: #333333;
   background-color: #ffffff;
+  height: 417px;
 }
 /* Вопрос "Заинтересовались?" */
 .search-hotel-question {
@@ -279,6 +280,15 @@ span {
   color: #000000;
   background-color: #ffffff;
   text-transform: uppercase;
+  padding-top: 91px;
+  padding-bottom: 29px;
+}
+/* текст в блоке поиска гостиницы */
+.search-hotel p {
+  width: 720px;
+  min-height: 52px;
+  padding-bottom: 56px;
+  align-self: center;
 }
 /* кнопка поиска гостиницы */
 .button-search-hotel {
@@ -291,6 +301,9 @@ span {
   background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
+  width: 575px;
+  min-height: 60px;
+  align-self: center;
 }
 /* Блок с предложением подписаться */
 .newsletter {
@@ -305,6 +318,7 @@ span {
   line-height: 26px;
   font-weight: 400;
   text-align: center;
+  min-height: 411px;
 }
 /* заголовок блока с предложением подписаться */
 .newsletter-title {
@@ -313,6 +327,16 @@ span {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 94px;
+  padding-bottom: 29px;
+  min-width: 720px;
+}
+/* текст в блоке с предложением подписаться */
+.newsletter p {
+  width: 720px;
+  padding-bottom: 46px;
+  align-self: center;
 }
 /* кнопка подписаться */
 .newsletter-button {
@@ -328,8 +352,38 @@ span {
 }
 .main-footer {
   display: flex;
+  justify-content: space-between;
   color: #000000;
   background-color: #ffffff;
+  height: 120px;
+}
+/* группа с социальными ссылками */
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 0 72px;
+  min-width: 107px;
+  max-width: 128px;
+  outline: 5px solid rgba(143, 48, 10, 0.5);
+  outline-offset: -5px;
+}
+/*пункты с  ссылками на социальные сети */
+.footer-social-item {
+  width: 22px;
+  height: 18px;
+  margin-right: 30px;
+  outline: 5px solid rgba(8, 107, 33, 0.5);
+  outline-offset: -5px;
+}
+.footer-social-item:nth-child(3n) {
+  width: 22px;
+  height: 18px;
+  margin-right: 0;
+  outline: 5px solid rgba(8, 107, 33, 0.5);
+  outline-offset: -5px;
 }
 /* номер телефона*/
 .telephone {
@@ -341,6 +395,16 @@ span {
   text-decoration: none;
   color: #000000;
   background-color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+/* логотип htmlacademy */
+.logo_htmlacademy {
+  width: 115px;
+  height: 34px;
+  padding-top: 42px;
+  padding-right: 72px;
+  padding-bottom: 44px;
 }
 /* основная сортировка в Каталоге */
 .basic-sorting {
