@@ -26,6 +26,16 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .page-center-container {
   width: 1200px;
   padding-left: 40px;
@@ -35,6 +45,7 @@ body {
 /* контейнер основной части страницы */
 .main-container {
   flex-grow: 1;
+
 }
 /* главная страница */
 .main-header {
@@ -49,45 +60,59 @@ body {
 /* контейнер с навигацией в шапке */
 .main-nav {
   display: flex;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+
 }
 /* логотип в шапке */
 .logo {
   width: 139px;
   margin-left: 70px;
   padding: 0;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+
 }
-/* список ссылок в навигации слева*/
+/* список (контейнер) ссылок в навигации слева*/
 .site-navigation {
+  display: flex;
+  flex-wrap: wrap;
   width: 455px;
+  margin: 0;
   margin-left: 30px;
   padding: 0;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  list-style-type: none;
 }
-/* список ссылок в навигации справа */
+/* список (контейнер) ссылок в навигации справа */
 .site-navigation-user {
+  display: flex;
+  flex-wrap: wrap;
   width: 304px;
+  margin: 0;
   margin-right: 70px;
   margin-left: auto;
   padding: 0;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  list-style-type: none;
 }
 /* для ссылок в шапке */
 .navigation-link {
+  display: block;
   font-size: 20px;
   line-height: 26px;
   color: inherit;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
+  padding: 20px 17px;
 }
-/* для кнопки "хочу сюда" */
+/* ссылки с иконками справа в шапке */
+.site-navigation-user-item .navigation-link {
+  min-width: 19px;
+  min-height: 24px;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+/* для кнопки "хочу сюда"(это ссылка) */
 .navigation-user {
+  display: block;
+  padding: 9px 15px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -109,34 +134,56 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+
 }
 /* текст " Седона — небольшой городок в Аризоне, заслуживающий большего!"*/
 .about b {
+  display: flex;
+  padding-top: 63px;
+  padding-bottom: 31px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
 }
+/* текст "Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!" */
+.about :last-child {
+  margin: 0;
+  padding-bottom: 80px;
+}
 /* блок с преимуществами */
 .features-list {
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 /*Дополнительный список в 1 пункте */
 .feature-list-icon {
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+/*  блоки дополнительного списка в 1 пункте */
+.feature-list-icon .features-list-item {
+  width: 400px;
+  height: 384px;
 }
 /* текст для всего блока преемуществ */
 .features-list-item {
+  display: flex;
+  flex-direction: column;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
   color: #333333;
   background-color: rgba(131, 179, 211, 0.12);
+  margin: 0;
+  width: 400px;
+  height: 384px;
 }
 /* текст заголовков преимуществ */
 .features-title {
@@ -145,6 +192,9 @@ body {
   font-weight: 700;
   text-align: center;
   color: #000000;
+  margin: 0;
+  padding-top: 97px;
+  padding-bottom: 30px;
 }
 /* пункт с иконкой еды */
 .features-list-item:nth-child(2) {
@@ -164,6 +214,11 @@ body {
   color: #ffffff;
   background-color: #83b3d3;
 }
+/* описание рядом с фотографиями */
+.description-image {
+  display: flex;
+  flex-direction: column;
+}
 /*блок с фото моста дьявола */
 .image-bridge {
   display: flex;
@@ -179,6 +234,30 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 97px;
+  padding-bottom: 30px;
+}
+/* заголовки в блоке с иконками */
+.title-icon {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+  padding-top: 184px;
+  padding-bottom: 20px;
+}
+span {
+  padding-bottom: 30px;
+}
+/* изображение моста */
+.image-bridge img {
+  order: -1;
+}
+ p {
+  margin: 0;
 }
 /* блок с поиском гостиницы в Седоне */
 .search-hotel {
