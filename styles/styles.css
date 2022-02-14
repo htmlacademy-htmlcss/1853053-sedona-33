@@ -45,7 +45,6 @@ body {
 /* контейнер основной части страницы */
 .main-container {
   flex-grow: 1;
-
 }
 /* главная страница */
 .main-header {
@@ -60,14 +59,12 @@ body {
 /* контейнер с навигацией в шапке */
 .main-nav {
   display: flex;
-
 }
 /* логотип в шапке */
 .logo {
   width: 139px;
   margin-left: 70px;
   padding: 0;
-
 }
 /* список (контейнер) ссылок в навигации слева*/
 .site-navigation {
@@ -134,7 +131,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 /* текст " Седона — небольшой городок в Аризоне, заслуживающий большего!"*/
 .about b {
@@ -256,7 +252,7 @@ span {
 .image-bridge img {
   order: -1;
 }
- p {
+p {
   margin: 0;
 }
 /* блок с поиском гостиницы в Седоне */
@@ -423,13 +419,23 @@ span {
   font-size: 60px;
   line-height: 77px;
   font-weight: 700;
+  margin-top: 35px;
+  margin-bottom: 5px;
+  margin-left: 70px;
+
+  width: 600px;
 }
 /* хлебные крошки */
 .breadcrumbs {
+  display: flex;
+  margin: 0 0 0 80px;
+  padding: 0;
+  list-style-type: none;
   color: #ffffff;
 }
 /* ссылки у хлебных крошек */
 .breadcrumbs-link {
+  margin-right: 26px;
   color: inherit;
   font-size: 16px;
   line-height: 21px;
@@ -440,6 +446,11 @@ span {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
+}
+
+/* списки с сортировкой */
+.catalog-filter-list {
+  list-style-type: none;
 }
 /* кнопка применить */
 .button-apply {
@@ -467,6 +478,9 @@ span {
 /* блок с результатом поиска */
 .assortment-hotel {
   display: flex;
+  justify-content: space-between;
+  margin-top: 44px;
+  margin-bottom: 53px;
   padding-left: 71px;
   padding-right: 71px;
 }
@@ -477,6 +491,7 @@ span {
   font-weight: 700;
   color: #000000;
   background-color: #ffffff;
+  margin-right: 192px;
 }
 /* расширенный список */
 .select-control {
@@ -485,6 +500,22 @@ span {
   font-weight: 400;
   color: #333333;
   background-color: #ffffff;
+  padding: 0;
+  margin-right: auto;
+}
+/* кнопки вывода способа показа карточек */
+.assortment-hotel .button {
+  width: 48px;
+  height: 48px;
+  margin-left: 8px;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+/* список карточек гостиниц */
+.product-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 .card-hotel {
   padding-left: 72px;
@@ -561,14 +592,28 @@ span {
   text-decoration: none;
   text-transform: uppercase;
 }
-/* блок с пагинацией */
+/* контейнер с пагинацией и раскрывающимся списком */
 .pagination-container {
   display: flex;
   padding-left: 72px;
   padding-right: 72px;
+  padding-top: 30px;
 }
-/* стилизации пагинации */
+/* контейнер с пагинацией */
+.pagination {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+/* пробелы между пагинацией */
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+/* стилизации пагинации ссылок */
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
   font-family: inherit;
   font-size: 20px;
   line-height: 26px;
@@ -578,6 +623,10 @@ span {
   background-color: #83b3d3;
   text-decoration: none;
   text-transform: uppercase;
+  width: 55px;
+  height: 55px;
+  margin: 0;
+  padding: 15px 15px;
 }
 /* стилизация кнопки "1" в пагинации */
 .pagination-current {
@@ -586,15 +635,30 @@ span {
 }
 /* раскрывающийся список гостиниц в результате поиска */
 .number-per-page {
+  display: flex;
+  margin-left: auto;
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
   color: #333333;
   background-color: #ffffff;
 }
+.number-per-page p {
+  min-width: 175px;
+  min-height: 23px;
+  padding: 16px 51px 16px 0;
+}
+/* раскрывающийся список в пагинации */
+.number-of-hotels {
+  margin: 4px 0 4px 0;
+  width: 160px;
+}
 /* блок с рассылкой в каталоге */
 .newsletter-catalog {
   width: 800px;
+  min-height: 241px;
+  padding-top: 73px;
+  padding-bottom: 140px;
   margin: 0 auto;
   font-family: inherit;
   font-size: 20px;
@@ -606,7 +670,19 @@ span {
   text-decoration: none;
   text-transform: uppercase;
 }
+/* текст в блоке */
+.newsletter-catalog p {
+  padding: 0 40px 46px 40px;
+  min-width: 720px;
+  min-height: 52px;
+}
 .newsletter-catalog-title {
+  margin: 0;
+  min-width: 720px;
+  min-height: 52px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 46px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
