@@ -69,24 +69,33 @@ body {
 /* список (контейнер) ссылок в навигации слева*/
 .site-navigation {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  width: 455px;
-  margin: 0;
-  margin-left: 30px;
   padding: 0;
+  margin: 0 0 0 30px;
+  min-width: 345px;
+  align-items: center;
   list-style-type: none;
 }
+/* пункт списка в навигации слева */
+.site-navigation-item {
+  margin: 30px 34px 30px 0;
+}
+.site-navigation-item:nth-child(1) {
+  margin-left: 17px;
+}
+.site-navigation-item:nth-child(3n) {
+  margin-right: 17px;
+}
+
 /* список (контейнер) ссылок в навигации справа */
 .site-navigation-user {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 304px;
-  margin: 0;
-  margin-right: 70px;
-  margin-left: auto;
+  min-width: 264px;
+  margin: 0 70px 0 0;
   padding: 0;
+  margin-left: auto;
   list-style-type: none;
 }
 /* для ссылок в шапке */
@@ -99,11 +108,7 @@ body {
   text-decoration: none;
   padding: 0;
 }
-/* пункт с ссылкой в левом контейнере  в шапке */
-.site-navigation-item {
-  align-self: center;
-  height: 26px;
-}
+
 
 /* ссылки с иконками справа в шапке */
 .site-navigation-user-item .navigation-link {
