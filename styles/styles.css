@@ -69,6 +69,7 @@ body {
 /* список (контейнер) ссылок в навигации слева*/
 .site-navigation {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
   width: 455px;
   margin: 0;
@@ -80,6 +81,7 @@ body {
 .site-navigation-user {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   width: 304px;
   margin: 0;
   margin-right: 70px;
@@ -89,15 +91,20 @@ body {
 }
 /* для ссылок в шапке */
 .navigation-link {
-  display: block;
   font-size: 20px;
   line-height: 26px;
   color: inherit;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
-  padding: 20px 17px;
+  padding: 0;
 }
+/* пункт с ссылкой в левом контейнере  в шапке */
+.site-navigation-item {
+  align-self: center;
+  height: 26px;
+}
+
 /* ссылки с иконками справа в шапке */
 .site-navigation-user-item .navigation-link {
   min-width: 19px;
@@ -126,6 +133,15 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
+/* логотип сайта седоны */
+.welcome {
+  padding-left: 371px;
+  padding-right: 371px;
+  padding-top: 51px;
+  padding-bottom: 25px;
+}
+/* разделитель внизу фона седоны */
+
 /* блок о седоне */
 .about {
   display: flex;
@@ -134,9 +150,12 @@ body {
 }
 /* текст " Седона — небольшой городок в Аризоне, заслуживающий большего!"*/
 .about b {
-  display: flex;
-  padding-top: 63px;
-  padding-bottom: 31px;
+  display: block;
+  min-width: 720px;
+  margin-left: 240px;
+  margin-right: 240px;
+  margin-top: 63px;
+  margin-bottom: 31px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -144,7 +163,7 @@ body {
   text-transform: uppercase;
 }
 /* текст "Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!" */
-.about :last-child {
+.about :nth-child(3) {
   margin: 0;
   padding-bottom: 80px;
 }
@@ -235,7 +254,7 @@ body {
   padding-bottom: 30px;
 }
 /* заголовки в блоке с иконками */
-.title-icon {
+.benefits-header-with-icons {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -288,6 +307,8 @@ p {
 }
 /* кнопка поиска гостиницы */
 .button-search-hotel {
+  display: block;
+  margin: 0 auto;
   font-family: inherit;
   font-size: 20px;
   line-height: 36px;
@@ -297,14 +318,9 @@ p {
   background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
-  width: 575px;
-  min-height: 60px;
-  align-self: center;
 }
 /* Блок с предложением подписаться */
 .newsletter {
-  display: flex;
-  flex-direction: column;
   color: #ffffff;
   background-color: #000000;
   background-image: url(../images/background-subscription.jpg);
@@ -330,9 +346,8 @@ p {
 }
 /* текст в блоке с предложением подписаться */
 .newsletter p {
-  width: 720px;
-  padding-bottom: 46px;
-  align-self: center;
+  display: block;
+  margin: 0 auto;
 }
 /* кнопка подписаться */
 .newsletter-button {
@@ -351,7 +366,7 @@ p {
   justify-content: space-between;
   color: #000000;
   background-color: #ffffff;
-  height: 120px;
+  min-height: 120px;
 }
 /* группа с социальными ссылками */
 .footer-social-list {
@@ -391,16 +406,17 @@ p {
   text-decoration: none;
   color: #000000;
   background-color: #ffffff;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 /* логотип htmlacademy */
 .logo_htmlacademy {
+  display: block;
   width: 115px;
   height: 34px;
-  padding-top: 42px;
-  padding-right: 72px;
-  padding-bottom: 44px;
+  margin-top: 42px;
+  margin-right: 72px;
+  margin-bottom: 44px;
 }
 /* основная сортировка в Каталоге */
 .basic-sorting {
