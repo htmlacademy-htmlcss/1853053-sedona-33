@@ -70,21 +70,15 @@ body {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0 0 0 30px;
-  min-width: 345px;
   align-items: center;
+  padding: 0;
+  margin: 0 17px 0 47px;
+  min-width: 345px;
   list-style-type: none;
 }
-/* пункт списка в навигации слева */
+/* элемент списка в навигации слева */
 .site-navigation-item {
-  margin: 30px 34px 30px 0;
-}
-.site-navigation-item:nth-child(1) {
-  margin-left: 17px;
-}
-.site-navigation-item:nth-child(3n) {
-  margin-right: 17px;
+  margin-right: 34px;
 }
 
 /* список (контейнер) ссылок в навигации справа */
@@ -145,32 +139,24 @@ body {
   padding-top: 51px;
   padding-bottom: 25px;
 }
-/* разделитель внизу фона седоны */
-
-/* блок о седоне */
 .about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 63px 240px 80px;
+}
+
+/* текстовое содержание в  блоке о седоне */
+.about p {
+  text-align: center;
 }
 /* текст " Седона — небольшой городок в Аризоне, заслуживающий большего!"*/
 .about b {
-  display: block;
-  min-width: 720px;
-  margin-left: 240px;
-  margin-right: 240px;
-  margin-top: 63px;
-  margin-bottom: 31px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
 }
-/* текст "Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!" */
-.about :nth-child(3) {
-  margin: 0;
-  padding-bottom: 80px;
+/*  текст "Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!" */
+.five-reasons {
+  margin-top: 31px;
 }
 /* блок с преимуществами */
 .features-list {
@@ -190,12 +176,10 @@ body {
 /*  блоки дополнительного списка в 1 пункте */
 .feature-list-icon .features-list-item {
   width: 400px;
-  height: 384px;
+  min-height: 384px;
 }
 /* текст для всего блока преемуществ */
 .features-list-item {
-  display: flex;
-  flex-direction: column;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -203,7 +187,7 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
   margin: 0;
   width: 400px;
-  height: 384px;
+  min-height: 384px;
 }
 /* текст заголовков преимуществ */
 .features-title {
@@ -234,11 +218,7 @@ body {
   color: #ffffff;
   background-color: #83b3d3;
 }
-/* описание рядом с фотографиями */
-.description-image {
-  display: flex;
-  flex-direction: column;
-}
+
 /*блок с фото моста дьявола */
 .image-bridge {
   display: flex;
@@ -269,30 +249,30 @@ body {
   padding-top: 184px;
   padding-bottom: 20px;
 }
-span {
-  padding-bottom: 30px;
+.features-list span {
+  display: block;
+  margin-bottom: 30px;
 }
 /* изображение моста */
-.image-bridge img {
-  order: -1;
+.description-image-bridge {
+  order: 1;
 }
 p {
   margin: 0;
 }
 /* блок с поиском гостиницы в Седоне */
 .search-hotel {
-  display: flex;
-  flex-direction: column;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   text-align: center;
   color: #333333;
   background-color: #ffffff;
-  height: 417px;
+  min-height: 417px;
 }
 /* Вопрос "Заинтересовались?" */
 .search-hotel-question {
+  display: block;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -300,15 +280,16 @@ p {
   color: #000000;
   background-color: #ffffff;
   text-transform: uppercase;
-  padding-top: 91px;
-  padding-bottom: 29px;
+  margin-top: 91px;
+  margin-bottom: 29px;
 }
 /* текст в блоке поиска гостиницы */
 .search-hotel p {
   width: 720px;
   min-height: 52px;
-  padding-bottom: 56px;
   align-self: center;
+  margin: 0 auto;
+  margin-bottom: 56px;
 }
 /* кнопка поиска гостиницы */
 .button-search-hotel {
