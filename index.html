@@ -46,15 +46,21 @@
       </header>
       <main class="main-container">
         <h1 class="visually-hidden">Седона</h1>
-        <section class="welcome">
-          <h2 class="visually-hidden" hidden>Фоновое изображение гор Седоны</h2>
-        </section>
+        <div class="welcome">
+          <img
+            src="images/welcome.svg"
+            width="458"
+            height="352"
+            alt="Приветственный логотип сайта Седоны">
+        </div>
         <section class="about">
           <h2 class="visually-hidden">Немного о Седоне</h2>
           <p>
             <b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
           </p>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+          <p class="five-reasons">
+            Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
+          </p>
         </section>
         <!-- Преимущества-->
         <section class="features">
@@ -62,30 +68,34 @@
           <ol class="features-list">
             <li class="features-list-item-image">
               <div class="image-town">
-                <h3 class="features-title-image">Настоящий городок</h3>
+                <div class="description-image">
+                  <h3 class="features-title-image">Настоящий городок</h3>
+                  <span>— №1 —</span>
+                  <p>
+                    Седона — не аттракцион для туристов, там течёт своя жизнь
+                  </p>
+                </div>
                 <img
                   src="images/photo-1.jpg"
                   width="800"
                   height="384"
                   alt="Фото городка Седоны.">
-                <span>— №1 —</span>
-                <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <!-- Блок с иконками-->
               <ul class="feature-list-icon">
                 <li class="features-list-item icon-house">
-                  <h4 class="features-title">Жильё</h4>
+                  <h4 class="benefits-header-with-icons">Жильё</h4>
                   <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
                 <li class="features-list-item icon-burger">
-                  <h4 class="features-title">Еда</h4>
+                  <h4 class="benefits-header-with-icons">Еда</h4>
                   <p>
                     Всегда заказывайте топовый фирменный бургер, вы не
                     разочаруетесь!
                   </p>
                 </li>
                 <li class="features-list-item icon-gift-box">
-                  <h4 class="features-title icon-gift-box">Сувениры</h4>
+                  <h4 class="benefits-header-with-icons">Сувениры</h4>
                   <p>
                     Не только китайского, но и настоящего местного производства!
                   </p>
@@ -94,17 +104,20 @@
             </li>
             <li class="features-list-item-image">
               <div class="image-bridge">
-                <h3 class="features-title-image">Там есть мост дьявола</h3>
+                <div class="description-image-bridge">
+                  <h3 class="features-title-image">Там есть мост дьявола</h3>
+                  <span>— №2 —</span>
+                  <p>
+                    Да, по нему можно пройти! Если вы осмелитесь, разумеется
+                  </p>
+                </div>
                 <img
                   src="images/photo-2.jpg"
                   width="800"
                   height="384"
                   alt="Фото моста дьявола.">
-                <span>— №2 —</span>
-                <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
             </li>
-
             <li class="features-list-item">
               <h3 class="features-title">Небольшая площадь</h3>
               <span>— №3 —</span>
