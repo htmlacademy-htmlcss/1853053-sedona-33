@@ -1243,6 +1243,10 @@ padding-bottom: 13px;
 }
 /* список карточек гостиниц */
 .product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  row-gap: 10px;
+  column-gap: 18px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -1260,6 +1264,7 @@ padding-bottom: 13px;
   font-weight: 400;
   color: #333333;
   background-color: #ffffff;
+
 }
 /* стилизация для ссылок с изображениями гостиниц и названиями */
 .product-card-link {
