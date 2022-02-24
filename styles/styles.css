@@ -514,15 +514,20 @@ p {
 }
 /* список карточек гостиниц */
 .product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  row-gap: 10px;
+  column-gap: 18px;
   list-style-type: none;
   margin: 0;
+  margin-bottom: 34px;
   padding: 0;
+
 }
 .card-hotel {
   padding-left: 72px;
   padding-right: 72px;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+
 }
 /* стилизация для всего блока с карточками товаров */
 .product-card {
