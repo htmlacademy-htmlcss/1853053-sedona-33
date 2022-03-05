@@ -92,8 +92,10 @@ body {
   margin-left: auto;
   list-style-type: none;
 }
-/* для ссылок в шапке */
+/* для ссылок в шапке (состояние покой) */
 .navigation-link {
+  position: relative;
+  display: block;
   font-size: 20px;
   line-height: 26px;
   color: inherit;
@@ -102,16 +104,45 @@ body {
   text-decoration: none;
   padding: 0;
 }
+/*  состояние наведение*/
+.navigation-link:hover {
+  color: #756257;
+}
+/* состояние нажатие  */
+.navigation-link:active {
+  color: #7562574d;
+}
+/* активное состояние когда юзер находится на странице */
+.site-navigation-item-current {
+  border-bottom: 2px solid #756257;
+}
 
-/* ссылки с иконками справа в шапке */
+/* ссылки с иконками справа в шапке (состояние покоя)*/
 .site-navigation-user-item .navigation-link {
   min-width: 19px;
   min-height: 24px;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  margin-right: 24px;
 }
 
-/* для кнопки "хочу сюда"(это ссылка) */
+/* иконка  состояние покоя*/
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #000000;
+}
+/* состояние наведения */
+.navigation-icon:hover {
+  fill: #756257;
+}
+/* состояние нажатия */
+.navigation-icon:active {
+  fill: #7562574d;
+}
+/* для кнопки "хочу сюда"(это ссылка) ; состояние покоя*/
 .navigation-user {
   display: block;
   padding: 9px 15px;
@@ -123,7 +154,25 @@ body {
   background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 4px;
+  margin-left: 8px;
+  min-width: 160px;
 }
+/* состояние наведение */
+.navigation-user:hover {
+  background-color: #615048;
+}
+/* состояние фокус */
+.navigation-user:focus {
+  background-color: #615048;
+  outline: 3px solid #83b3d3;
+}
+/* состояние нажатие */
+.navigation-user:active {
+  background-color: #615048;
+  color: #ffffff4d;
+}
+
 /* фоновый рисунок */
 .welcome {
   height: 485px;
@@ -199,6 +248,27 @@ body {
   padding-top: 97px;
   padding-bottom: 30px;
 }
+/* иконка домика */
+.icon-house {
+  background-image: url("../images/icons/icon-house.svg");
+  background-repeat: no-repeat;
+  background-position-y: 90px;
+  background-position-x: 162px;
+}
+/* иконка с бургером */
+.icon-burger {
+  background-image: url("../images/icons/icon-food.svg");
+  background-repeat: no-repeat;
+  background-position-y: 90px;
+  background-position-x: 162px;
+}
+/* иконка с сувенирами */
+.icon-gift-box {
+  background-image: url("../images/icons/icon-present.svg");
+  background-repeat: no-repeat;
+  background-position-y: 85px;
+  background-position-x: 168px;
+}
 /* пункт с иконкой еды */
 .features-list-item:nth-child(2) {
   background-color: #ffffff;
@@ -267,7 +337,6 @@ p {
   text-align: center;
   color: #333333;
   background-color: #ffffff;
-  min-height: 417px;
 }
 /* Вопрос "Заинтересовались?" */
 .search-hotel-question {
@@ -290,10 +359,16 @@ p {
   margin: 0 auto;
   margin-bottom: 56px;
 }
-/* кнопка поиска гостиницы */
+/* кнопка поиска гостиницы  -состояние покоя*/
 .button-search-hotel {
   display: block;
   margin: 0 auto;
+  margin-left: 312px;
+  margin-right: 312px;
+  margin-bottom: 93px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
   font-family: inherit;
   font-size: 20px;
   line-height: 36px;
@@ -303,6 +378,19 @@ p {
   background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
+}
+/* состояие наведения */
+.button-search-hotel:hover {
+  background-color: #615048;
+}
+/* состояние фокуса */
+.button-search-hotel:focus {
+  background-color: #615048;
+}
+/* состояние нажатия  */
+.button-search-hotel:active {
+  background-color: #615048;
+  color: rgba(255, 255, 255, 0.7);
 }
 /* Блок с предложением подписаться */
 .newsletter {
@@ -333,9 +421,22 @@ p {
 .newsletter p {
   display: block;
   margin: 0 auto;
+  margin-left: 240px;
+  margin-right: 240px;
+  margin-bottom: 46px;
+  min-height: 52px;
 }
-/* кнопка подписаться */
+/* форма подписки вместе скнопкой подписатья */
+.newsletter-form {
+  min-height: 61px;
+}
+/* кнопка подписаться  состояние покоя*/
 .newsletter-button {
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 0px 10px 10px 0px;
   font-family: inherit;
   font-size: 20px;
   line-height: 26px;
@@ -345,6 +446,21 @@ p {
   background-color: #83b3d3;
   text-decoration: none;
   text-transform: uppercase;
+  min-height: 61px;
+  min-width: 200px;
+}
+/* состояние наведения */
+.newsletter-button:hover {
+  background-color: rgba(104, 162, 202, 1);
+}
+/* состояние фокуса */
+.newsletter-button:focus {
+  background-color: rgba(104, 162, 202, 1);
+}
+/* состояние нажатие */
+.newsletter-button:active {
+  background-color: rgba(104, 162, 202, 1);
+  color: rgba(255, 255, 255, 0.7);
 }
 .main-footer {
   display: flex;
@@ -362,27 +478,58 @@ p {
   padding: 0;
   margin: 0 0 0 72px;
   min-width: 107px;
-  max-width: 128px;
-  outline: 5px solid rgba(143, 48, 10, 0.5);
-  outline-offset: -5px;
+  min-height: 40px;
 }
 /*пункты с  ссылками на социальные сети */
 .footer-social-item {
-  width: 22px;
-  height: 18px;
+  min-height: 40px;
+  min-width: 40px;
   margin-right: 30px;
-  outline: 5px solid rgba(8, 107, 33, 0.5);
-  outline-offset: -5px;
 }
 .footer-social-item:nth-child(3n) {
-  width: 22px;
-  height: 18px;
   margin-right: 0;
-  outline: 5px solid rgba(8, 107, 33, 0.5);
-  outline-offset: -5px;
 }
-/* номер телефона*/
+/* ссылки на социальные сети  - состояние покоя*/
+.button-social-item {
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 40px;
+  min-width: 40px;
+  fill: rgba(131, 179, 211, 1);
+}
+/* состояние наведения */
+.button-social-item:hover {
+  fill: rgba(104, 162, 202, 1);
+}
+/* состояние фокуса */
+.button-social-item:focus {
+  box-sizing: border-box;
+  fill: rgba(104, 162, 202, 1);
+  border: 3px solid #83b3d3;
+  border-radius: 10px;
+}
+/* состояние нажатия */
+.button-social-item:active {
+  fill: rgba(104, 162, 202, 1);
+  opacity: 0.3;
+}
+/* иконка твиттера */
+.footer-social-tw {
+  background-image: url("../images/icons/icon-twitter.svg");
+}
+/* иконка фейсбука */
+.footer-social-fb {
+  background-image: url("../images/icons/icon-facebook.svg");
+  background-size: 10px 18px;
+}
+/* иконка ютуба */
+.footer-social-ytb {
+  background-image: url("../images/icons/icon-youtube.svg");
+}
+/* номер телефона состояние покоя*/
 .telephone {
+  display: flex;
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
@@ -391,17 +538,55 @@ p {
   text-decoration: none;
   color: #000000;
   background-color: #ffffff;
+  min-height: 50px;
   margin-top: 40px;
   margin-bottom: 30px;
 }
-/* логотип htmlacademy */
+/* состояние наведения */
+.telephone:hover {
+  color: rgba(117, 98, 87, 1);
+}
+/* состояние фокуса */
+.telephone:focus {
+  box-sizing: border-box;
+  color: rgba(117, 98, 87, 1);
+  border: 3px solid #83b3d3;
+  border-radius: 10px;
+  padding: 15px;
+  margin: auto;
+}
+/* состояние нажатия */
+.telephone:active {
+  color: #756257;
+  opacity: 0.3;
+}
+/* логотип htmlacademy -состояние покоя */
 .logo_htmlacademy {
-  display: block;
-  width: 115px;
-  height: 34px;
+  display: flex;
+  min-width: 115px;
+  min-height: 34px;
   margin-top: 42px;
   margin-right: 72px;
-  margin-bottom: 44px;
+  margin-bottom: auto;
+  padding: 10px;
+}
+/* состояние наведения */
+.logo_htmlacademy:hover {
+  fill: #615048;
+}
+/* состояние фокуса */
+.logo_htmlacademy:focus {
+  box-sizing: border-box;
+  fill: #756257;
+  border: 3px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-right: 69px;
+}
+/* состояние нажатия */
+.logo_htmlacademy:active {
+  fill: #756257;
+  opacity: 0.3;
 }
 /* основная сортировка в Каталоге */
 .basic-sorting {
