@@ -488,6 +488,7 @@ p {
   min-height: 20px;
   min-width: 20px;
   margin-right: 30px;
+
 }
 .footer-social-item:nth-child(3n) {
   margin-right: 0;
@@ -498,6 +499,7 @@ p {
   min-height: 20px;
   min-width: 20px;
   padding: 10px;
+
 }
 /* иконка в состоянии покоя */
 .footer-social-icon {
@@ -509,10 +511,9 @@ p {
 }
 /* состояние фокуса */
 .button-social-item:focus {
-  box-sizing: border-box;
-  border: 3px solid #83b3d3;
   border-radius: 10px;
   padding: 10px;
+  outline: 3px solid #83b3d3;
 }
 /* цвет в состояние фокуса для иконки */
 .button-social-item:focus .footer-social-icon {
@@ -543,9 +544,8 @@ p {
 }
 /* состояние фокуса */
 .telephone:focus {
-  box-sizing: border-box;
   color: rgba(117, 98, 87, 1);
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
   border-radius: 10px;
   padding: 15px;
   margin: auto;
@@ -569,13 +569,12 @@ p {
 }
 /* состояние фокуса */
 .logo_htmlacademy:focus {
+
   width: 115px;
   height: 34px;
-  box-sizing: border-box;
-  border: 3px solid #83b3d3;
-  box-sizing: border-box;
+  outline: 3px solid #83b3d3;
   border-radius: 10px;
-  padding: 10px;
+
 }
 /*цвет логотипа в состоянии нажатии */
 .logo_htmlacademy:focus .icon-htmlacademy {
