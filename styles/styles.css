@@ -49,7 +49,6 @@ body {
 /* главная страница */
 .main-header {
   color: #000000;
-
 }
 /* каталог */
 .main-inner {
@@ -386,7 +385,7 @@ p {
 /* состояние фокуса */
 .button-search-hotel:focus {
   background-color: #615048;
-  border: 3px solid #83B3D3;
+  border: 3px solid #83b3d3;
   box-sizing: border-box;
 }
 /* состояние нажатия  */
@@ -499,11 +498,11 @@ p {
   min-height: 20px;
   min-width: 20px;
   padding: 10px;
-  }
-  /* иконка в состоянии покоя */
-  .footer-social-icon {
-    fill: rgba(131, 179, 211, 1);
-  }
+}
+/* иконка в состоянии покоя */
+.footer-social-icon {
+  fill: rgba(131, 179, 211, 1);
+}
 /* состояние наведения */
 .button-social-item:hover .footer-social-icon {
   fill: rgba(104, 162, 202, 1);
@@ -518,9 +517,9 @@ p {
 /* цвет в состояние фокуса для иконки */
 .button-social-item:focus .footer-social-icon {
   fill: rgba(104, 162, 202, 1);
-  }
+}
 /* состояние нажатия */
-.button-social-item:active .footer-social-icon{
+.button-social-item:active .footer-social-icon {
   fill: rgba(104, 162, 202, 1);
   opacity: 0.3;
 }
@@ -563,7 +562,6 @@ p {
   margin-top: 42px;
   margin-right: 72px;
   padding: 10px;
-
 }
 /* состояние наведения */
 .logo_htmlacademy:hover {
@@ -574,16 +572,15 @@ p {
   width: 115px;
   height: 34px;
   box-sizing: border-box;
-
   border: 3px solid #83b3d3;
   box-sizing: border-box;
   border-radius: 10px;
   padding: 10px;
-  }
-  /*цвет логотипа в состоянии нажатии */
-  .logo_htmlacademy:focus .icon-htmlacademy {
-    fill: #756257;
-  }
+}
+/*цвет логотипа в состоянии нажатии */
+.logo_htmlacademy:focus .icon-htmlacademy {
+  fill: #756257;
+}
 /* состояние нажатия */
 .logo_htmlacademy:active {
   fill: #756257;
