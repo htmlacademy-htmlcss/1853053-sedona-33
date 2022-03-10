@@ -24,7 +24,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 .visually-hidden {
   position: absolute;
@@ -49,7 +49,6 @@ body {
 /* главная страница */
 .main-header {
   color: #000000;
-  background-color: #f2f2f2;
 }
 /* каталог */
 .main-inner {
@@ -92,7 +91,8 @@ body {
   margin-left: auto;
   list-style-type: none;
 }
-/* для ссылок в шапке */
+
+/* для ссылок в шапке  (состояние покой) */
 .navigation-link {
   font-size: 20px;
   line-height: 26px;
@@ -102,16 +102,45 @@ body {
   text-decoration: none;
   padding: 0;
 }
-
-/* ссылки с иконками справа в шапке */
-.site-navigation-user-item .navigation-link {
-  min-width: 19px;
-  min-height: 24px;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+/* ссылки иконок */
+.link-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  margin-right: 24px;
 }
-
-/* для кнопки "хочу сюда"(это ссылка) */
+/*  состояние наведение*/
+.navigation-link:hover {
+  color: #756257;
+}
+/* состояние нажатие  */
+.navigation-link:active {
+  color: #7562574d;
+}
+/* активное состояние когда юзер находится на странице */
+.site-navigation-item-current {
+  border-bottom: 2px solid #756257;
+}
+/* иконка  состояние покоя*/
+.navigation-icon {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #000000;
+}
+/* состояние наведения */
+.link-user:hover .navigation-icon {
+  fill: #756257;
+}
+/* состояние нажатия */
+.link-user:active .navigation-icon {
+  fill: #7562574d;
+}
+/* для кнопки "хочу сюда"(это ссылка) ; состояние покоя*/
 .navigation-user {
   display: block;
   padding: 9px 15px;
@@ -123,7 +152,25 @@ body {
   background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 4px;
+  margin-left: 8px;
+  min-width: 160px;
 }
+/* состояние наведение */
+.navigation-user:hover {
+  background-color: #615048;
+}
+/* состояние фокус */
+.navigation-user:focus {
+  background-color: #615048;
+  outline: 3px solid #83b3d3;
+}
+/* состояние нажатие */
+.navigation-user:active {
+  background-color: #615048;
+  color: #ffffff4d;
+}
+
 /* фоновый рисунок */
 .welcome {
   height: 485px;
@@ -199,6 +246,27 @@ body {
   padding-top: 97px;
   padding-bottom: 30px;
 }
+/* иконка домика */
+.icon-house {
+  background-image: url("../images/icons/icon-house.svg");
+  background-repeat: no-repeat;
+  background-position-y: 90px;
+  background-position-x: 162px;
+}
+/* иконка с бургером */
+.icon-burger {
+  background-image: url("../images/icons/icon-food.svg");
+  background-repeat: no-repeat;
+  background-position-y: 90px;
+  background-position-x: 162px;
+}
+/* иконка с сувенирами */
+.icon-gift-box {
+  background-image: url("../images/icons/icon-present.svg");
+  background-repeat: no-repeat;
+  background-position-y: 85px;
+  background-position-x: 168px;
+}
 /* пункт с иконкой еды */
 .features-list-item:nth-child(2) {
   background-color: #ffffff;
@@ -267,7 +335,6 @@ p {
   text-align: center;
   color: #333333;
   background-color: #ffffff;
-  min-height: 417px;
 }
 /* Вопрос "Заинтересовались?" */
 .search-hotel-question {
@@ -290,10 +357,17 @@ p {
   margin: 0 auto;
   margin-bottom: 56px;
 }
-/* кнопка поиска гостиницы */
+/* кнопка поиска гостиницы  -состояние покоя*/
 .button-search-hotel {
   display: block;
   margin: 0 auto;
+  width: 575px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 93px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
   font-family: inherit;
   font-size: 20px;
   line-height: 36px;
@@ -303,6 +377,21 @@ p {
   background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
+}
+/* состояие наведения */
+.button-search-hotel:hover {
+  background-color: #615048;
+}
+/* состояние фокуса */
+.button-search-hotel:focus {
+  background-color: #615048;
+  border: 3px solid #83b3d3;
+  box-sizing: border-box;
+}
+/* состояние нажатия  */
+.button-search-hotel:active {
+  background-color: #615048;
+  color: rgba(255, 255, 255, 0.7);
 }
 /* Блок с предложением подписаться */
 .newsletter {
@@ -333,9 +422,22 @@ p {
 .newsletter p {
   display: block;
   margin: 0 auto;
+  margin-left: 240px;
+  margin-right: 240px;
+  margin-bottom: 46px;
+  min-height: 52px;
 }
-/* кнопка подписаться */
+/* форма подписки вместе скнопкой подписатья */
+.newsletter-form {
+  min-height: 61px;
+}
+/* кнопка подписаться  состояние покоя*/
 .newsletter-button {
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 0px 10px 10px 0px;
   font-family: inherit;
   font-size: 20px;
   line-height: 26px;
@@ -345,6 +447,23 @@ p {
   background-color: #83b3d3;
   text-decoration: none;
   text-transform: uppercase;
+  min-height: 61px;
+  min-width: 200px;
+}
+/* состояние наведения */
+.newsletter-button:hover {
+  background-color: rgba(104, 162, 202, 1);
+}
+/* состояние фокуса */
+.newsletter-button:focus {
+  background-color: rgba(104, 162, 202, 1);
+  border: 3px solid #756257;
+  box-sizing: border-box;
+}
+/* состояние нажатие */
+.newsletter-button:active {
+  background-color: rgba(104, 162, 202, 1);
+  color: rgba(255, 255, 255, 0.7);
 }
 .main-footer {
   display: flex;
@@ -361,27 +480,51 @@ p {
   list-style-type: none;
   padding: 0;
   margin: 0 0 0 72px;
-  min-width: 107px;
-  max-width: 128px;
-  outline: 5px solid rgba(143, 48, 10, 0.5);
-  outline-offset: -5px;
+
+  min-height: 40px;
 }
 /*пункты с  ссылками на социальные сети */
 .footer-social-item {
-  width: 22px;
-  height: 18px;
+  min-height: 20px;
+  min-width: 20px;
   margin-right: 30px;
-  outline: 5px solid rgba(8, 107, 33, 0.5);
-  outline-offset: -5px;
+
 }
 .footer-social-item:nth-child(3n) {
-  width: 22px;
-  height: 18px;
   margin-right: 0;
-  outline: 5px solid rgba(8, 107, 33, 0.5);
-  outline-offset: -5px;
 }
-/* номер телефона*/
+/* ссылки на социальные сети */
+.button-social-item {
+  display: flex;
+  min-height: 20px;
+  min-width: 20px;
+  padding: 10px;
+
+}
+/* иконка в состоянии покоя */
+.footer-social-icon {
+  fill: rgba(131, 179, 211, 1);
+}
+/* состояние наведения */
+.button-social-item:hover .footer-social-icon {
+  fill: rgba(104, 162, 202, 1);
+}
+/* состояние фокуса */
+.button-social-item:focus {
+  border-radius: 10px;
+  padding: 10px;
+  outline: 3px solid #83b3d3;
+}
+/* цвет в состояние фокуса для иконки */
+.button-social-item:focus .footer-social-icon {
+  fill: rgba(104, 162, 202, 1);
+}
+/* состояние нажатия */
+.button-social-item:active .footer-social-icon {
+  fill: rgba(104, 162, 202, 1);
+  opacity: 0.3;
+}
+/* номер телефона состояние покоя*/
 .telephone {
   font-size: 40px;
   line-height: 40px;
@@ -391,17 +534,56 @@ p {
   text-decoration: none;
   color: #000000;
   background-color: #ffffff;
+  min-height: 50px;
   margin-top: 40px;
   margin-bottom: 30px;
 }
-/* логотип htmlacademy */
+/* состояние наведения */
+.telephone:hover {
+  color: rgba(117, 98, 87, 1);
+}
+/* состояние фокуса */
+.telephone:focus {
+  color: rgba(117, 98, 87, 1);
+  outline: 3px solid #83b3d3;
+  border-radius: 10px;
+  padding: 15px;
+  margin: auto;
+}
+/* состояние нажатия */
+.telephone:active {
+  color: #756257;
+  opacity: 0.3;
+}
+/* логотип htmlacademy -состояние покоя */
 .logo_htmlacademy {
-  display: block;
   width: 115px;
   height: 34px;
   margin-top: 42px;
   margin-right: 72px;
-  margin-bottom: 44px;
+  padding: 10px;
+}
+/* состояние наведения */
+.logo_htmlacademy:hover {
+  fill: #615048;
+}
+/* состояние фокуса */
+.logo_htmlacademy:focus {
+
+  width: 115px;
+  height: 34px;
+  outline: 3px solid #83b3d3;
+  border-radius: 10px;
+
+}
+/*цвет логотипа в состоянии нажатии */
+.logo_htmlacademy:focus .icon-htmlacademy {
+  fill: #756257;
+}
+/* состояние нажатия */
+.logo_htmlacademy:active {
+  fill: #756257;
+  opacity: 0.3;
 }
 /* основная сортировка в Каталоге */
 .basic-sorting {
